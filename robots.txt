@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cours-maths-versailles.fr/sitemap.xml

@@ -474,6 +474,53 @@ a { color: inherit; text-decoration: none; }
 .zone-note { color: var(--ink-soft); font-size: 0.95rem; }
 .zone-note a { color: var(--teal-deep); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
+/* ===================== FAQ ===================== */
+.faq-list {
+  display: grid;
+  gap: 0.7rem;
+  max-width: 800px;
+}
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--sand);
+  border-radius: var(--radius);
+  padding: 0 1.4rem;
+  box-shadow: var(--shadow-s);
+  transition: border-color 0.2s ease;
+}
+.faq-item[open] { border-color: var(--terracotta); }
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 1.1rem 2rem 1.1rem 0;
+  position: relative;
+  outline-offset: 4px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--terracotta);
+  transition: transform 0.25s ease;
+  line-height: 1;
+}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item p {
+  margin: 0;
+  padding: 0 0 1.2rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+.faq-item a { color: var(--teal-deep); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
 /* ===================== CONTACT ===================== */
 .contact {
   position: relative;
