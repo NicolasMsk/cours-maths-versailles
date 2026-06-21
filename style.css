@@ -195,17 +195,11 @@ p { margin: 0; }
   border: 1px solid var(--line);
   box-shadow: 0 40px 70px -40px rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  /* POUR VOTRE PHOTO : décommentez ci-dessous
-     et mettez .portrait-placeholder en opacity:0. */
-  /* background-image: url("portrait.jpg");
-     background-size: cover; background-position: center; */
+  background-image: url("portrait.jpg");
+  background-size: cover;
+  background-position: center 18%;
 }
-.portrait-placeholder {
-  font-family: var(--serif);
-  font-size: clamp(3.4rem, 7vw, 4.6rem);
-  letter-spacing: 0.06em;
-  color: var(--gold);
-}
+.portrait-placeholder { display: none; }
 .portrait-badge {
   position: absolute;
   bottom: 1rem; left: 1rem;
