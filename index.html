@@ -41,10 +41,10 @@
   <!-- Favicon (SVG inline, monogramme π) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E07856'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='21' fill='%23FFFDF9' text-anchor='middle'%3E%CF%80%3C/text%3E%3C/svg%3E" />
 
-  <!-- Polices -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Polices auto-hébergées (aucune requête externe, aucun cookie) -->
+  <link rel="preload" href="fonts/fraunces-normal-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-normal-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="fonts.css" />
 
   <link rel="stylesheet" href="style.css" />
 
@@ -212,9 +212,9 @@
     </a>
     <nav class="nav" aria-label="Navigation principale">
       <a href="#a-propos">À&nbsp;propos</a>
-      <a href="#offre">Les&nbsp;cours</a>
-      <a href="#credit">Crédit&nbsp;d'impôt</a>
-      <a href="#zone">Où&nbsp;?</a>
+      <a href="#methode">Méthode</a>
+      <a href="#niveaux">Niveaux</a>
+      <a href="#credit">Tarif</a>
       <a href="#faq">FAQ</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
@@ -243,7 +243,7 @@
             </a>
           </div>
           <div class="hero-tags">
-            <span class="tag tag--accent">1ᵉʳ cours gratuit</span>
+            <span class="tag tag--accent">1er cours gratuit</span>
             <span class="tag">50&nbsp;€/h · soit 25&nbsp;€ après crédit d'impôt</span>
             <span class="tag">Tous niveaux jusqu'au bac</span>
           </div>
@@ -314,41 +314,87 @@
       </div>
     </section>
 
-    <!-- ===================== OFFRE ===================== -->
-    <section class="section offer" id="offre" aria-labelledby="offer-title">
+    <!-- ===================== MÉTHODE ===================== -->
+    <section class="section method" id="methode" aria-labelledby="method-title">
       <div class="section-head">
         <span class="section-num">02</span>
-        <h2 id="offer-title">Ce que je propose</h2>
+        <h2 id="method-title">Ma méthode</h2>
+      </div>
+      <p class="section-lead">
+        Pas de cours générique récité. Chaque élève part d'un point différent —
+        mon travail est de trouver lequel, puis de l'amener pas à pas vers l'autonomie.
+      </p>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">01</span>
+          <h3>Un diagnostic, d'abord</h3>
+          <p>
+            On repère précisément ce qui bloque. Une difficulté en terminale prend
+            souvent racine dans une notion vue deux ans plus tôt&nbsp;: c'est là qu'on commence.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num">02</span>
+          <h3>On reconstruit des bases solides</h3>
+          <p>
+            On comble les lacunes dans le bon ordre, jusqu'à ce que chaque notion
+            tienne debout toute seule. C'est ce qui débloque la suite.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num">03</span>
+          <h3>On s'entraîne comme le jour J</h3>
+          <p>
+            Exercices type contrôle et annales du brevet ou du bac, corrigés en détail —
+            avec un vrai soin apporté à la rédaction et au raisonnement, pas seulement au résultat.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num">04</span>
+          <h3>L'élève gagne en autonomie</h3>
+          <p>
+            Méthodes de rédaction, gestion du temps, relecture&nbsp;: l'objectif final
+            est qu'il réussisse seul, sereinement, le jour de l'épreuve.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== NIVEAUX ===================== -->
+    <section class="section levels" id="niveaux" aria-labelledby="levels-title">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 id="levels-title">Niveaux &amp; programmes</h2>
       </div>
       <div class="cards">
         <article class="card">
           <span class="card-ico" aria-hidden="true">
             <svg class="ico" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 2-2h11v15H7a2 2 0 0 0-2 2V5Z"/><path d="M18 18H7a2 2 0 0 0-2 2"/><path d="M9 8h6M9 11h6"/></svg>
           </span>
-          <h3>Tous niveaux jusqu'au bac</h3>
+          <h3>Primaire &amp; collège</h3>
           <p>
-            Du primaire à la terminale&nbsp;: soutien régulier, remise à niveau,
-            préparation aux contrôles, au brevet et au baccalauréat.
+            Calcul, fractions, proportionnalité, géométrie (Thalès, Pythagore),
+            premières fonctions — et préparation au brevet.
           </p>
         </article>
         <article class="card">
           <span class="card-ico" aria-hidden="true">
-            <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1 5.1-2.1Z"/></svg>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M4 15c4 0 5-8 8-8s4 5 8 5"/></svg>
           </span>
-          <h3>Comprendre, pas seulement réussir</h3>
+          <h3>Lycée — Seconde &amp; Première</h3>
           <p>
-            On repart des bases si besoin, on construit un raisonnement solide
-            et des méthodes réutilisables, plutôt que des recettes apprises par cœur.
+            Fonctions, équations, vecteurs, dérivation, suites, statistiques et probabilités.
+            Soutien en spécialité mathématiques.
           </p>
         </article>
         <article class="card">
           <span class="card-ico" aria-hidden="true">
-            <svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M15.5 5.3a3 3 0 0 1 0 5.6"/><path d="M17 19a5.5 5.5 0 0 0-2.6-4.7"/></svg>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V16c0 1.2 2.7 2.4 6 2.4s6-1.2 6-2.4v-4.5"/><path d="M22 9v5.5"/></svg>
           </span>
-          <h3>Un suivi personnalisé</h3>
+          <h3>Terminale &amp; bac</h3>
           <p>
-            Chaque séance s'adapte à l'élève&nbsp;: ses points faibles, son programme,
-            ses objectifs. Bilan régulier avec les parents si vous le souhaitez.
+            Limites, dérivées, exponentielle et logarithme, intégrales, probabilités&nbsp;:
+            préparation au contrôle continu et à l'épreuve du baccalauréat.
           </p>
         </article>
       </div>
@@ -366,7 +412,7 @@
             <strong>crédit d'impôt de 50&nbsp;%</strong>, que vous soyez imposable ou non&nbsp;:
             le coût réel tombe à <strong>25&nbsp;€&nbsp;/&nbsp;heure</strong>.
           </p>
-          <p class="credit-highlight">Et le 1ᵉʳ cours est gratuit, sans engagement.</p>
+          <p class="credit-highlight">Et le 1er cours est gratuit, sans engagement.</p>
           <p class="credit-note">
             Je vous fournis l'attestation fiscale nécessaire pour votre déclaration.
           </p>
@@ -382,7 +428,7 @@
     <!-- ===================== ZONE ===================== -->
     <section class="section zone" id="zone" aria-labelledby="zone-title">
       <div class="section-head">
-        <span class="section-num">03</span>
+        <span class="section-num">04</span>
         <h2 id="zone-title">Où&nbsp;j'interviens</h2>
       </div>
       <p class="zone-intro">
@@ -402,7 +448,7 @@
     <!-- ===================== FAQ ===================== -->
     <section class="section faq" id="faq" aria-labelledby="faq-title">
       <div class="section-head">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <h2 id="faq-title">Questions fréquentes</h2>
       </div>
       <div class="faq-list">
@@ -498,7 +544,11 @@
   <!-- ===================== PIED DE PAGE ===================== -->
   <footer class="site-footer">
     <span class="footer-brand"><span class="brand-mark" aria-hidden="true">π</span> Nicolas Musicki</span>
-    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay · Crédit d'impôt 50 %</span>
+    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay</span>
+    <nav class="footer-links" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
   </footer>
 
 </body>
