@@ -657,7 +657,11 @@ p { margin: 0; }
 
 /* Page article */
 .article { max-width: 720px; margin: 0 auto; padding: clamp(1.8rem, 5vw, 3rem) var(--gut) clamp(3rem, 7vw, 5rem); }
-.article-banner { width: 100%; aspect-ratio: 5 / 2; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line-soft); margin-bottom: 2rem; }
+.article-banner { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line-soft); margin-bottom: 2rem; }
+.illus img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.article-source { font-size: 0.85rem; color: var(--ivory-fade); margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--line-soft); }
+.article-source a { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
+.blog-credit { margin-top: 2rem; font-size: 0.82rem; color: var(--ivory-fade); }
 .article-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--ivory-fade); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
 .article-meta .cat { color: var(--gold); font-weight: 600; }
 .article h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin-bottom: 1.2rem; }
@@ -685,7 +689,7 @@ p { margin: 0; }
 
 @media (max-width: 880px) {
   .article-grid { grid-template-columns: 1fr; }
-  .article-banner { aspect-ratio: 2 / 1; }
+  .article-banner { aspect-ratio: 16 / 10; }
 }
 
 /* ===================== MOTION (discret, CSS only) ===================== */
