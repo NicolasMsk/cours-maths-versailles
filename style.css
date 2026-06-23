@@ -662,6 +662,52 @@ p { margin: 0; }
 .article-source { font-size: 0.85rem; color: var(--ivory-fade); margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--line-soft); }
 .article-source a { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
 .blog-credit { margin-top: 2rem; font-size: 0.82rem; color: var(--ivory-fade); }
+
+/* Encadré « À retenir » */
+.takeaways {
+  background: rgba(231, 185, 106, 0.07);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.5rem;
+  margin: 0 0 2rem;
+}
+.takeaways .takeaways-title {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+.takeaways ul { margin: 0; padding-left: 1.2rem; }
+.takeaways li { color: var(--ivory); margin-bottom: 0.4rem; line-height: 1.55; }
+
+/* Bloc auteur (E-E-A-T) */
+.author-box {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  margin-top: 2.8rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-l);
+  background: var(--navy-800);
+}
+.author-box img {
+  width: 88px; height: 88px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 1px solid var(--line);
+}
+.author-box .author-kicker { display: block; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem; }
+.author-box strong { font-family: var(--serif); font-size: 1.25rem; color: var(--ivory); }
+.author-box p { color: var(--ivory-dim); font-size: 0.95rem; margin: 0.45rem 0 0; }
+.author-box .author-links { margin-top: 0.6rem; }
+.author-box .author-links a { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 560px) { .author-box { flex-direction: column; text-align: center; } }
 .article-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--ivory-fade); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
 .article-meta .cat { color: var(--gold); font-weight: 600; }
 .article h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin-bottom: 1.2rem; }
