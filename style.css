@@ -15,8 +15,8 @@
   --gold-600: #C99A4B;
 
   --ivory:     #F4EEE2;
-  --ivory-dim: rgba(244, 238, 226, 0.66);
-  --ivory-fade:rgba(244, 238, 226, 0.42);
+  --ivory-dim: rgba(244, 238, 226, 0.72);
+  --ivory-fade:rgba(244, 238, 226, 0.55);
 
   --line:      rgba(231, 185, 106, 0.22);   /* hairline doré   */
   --line-soft: rgba(244, 238, 226, 0.09);   /* hairline ivoire */
@@ -63,6 +63,13 @@ h1, h2, h3 {
 em { font-style: italic; color: var(--gold); }
 
 a { color: inherit; text-decoration: none; }
+
+/* Accessibilité : focus clavier visible */
+:focus-visible {
+  outline: 2px solid var(--gold-300);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
 
 p { margin: 0; }
 
@@ -580,6 +587,28 @@ p { margin: 0; }
 .legal-dl div { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.4rem 0; border-bottom: 1px solid var(--line-soft); }
 .legal-dl dt { color: var(--ivory-fade); min-width: 9rem; font-size: 0.95rem; }
 .legal-dl dd { margin: 0; color: var(--ivory); }
+
+/* ===================== PAGE 404 ===================== */
+.notfound {
+  min-height: 68vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5rem) var(--gut);
+}
+.notfound .code {
+  font-family: var(--serif);
+  font-size: clamp(4.5rem, 15vw, 8.5rem);
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+}
+.notfound h1 { font-size: clamp(1.5rem, 4vw, 2.3rem); margin: 0.8rem 0 0.7rem; }
+.notfound p { color: var(--ivory-dim); margin-bottom: 2.2rem; max-width: 42ch; }
 
 /* ===================== MOTION (discret, CSS only) ===================== */
 @media (prefers-reduced-motion: no-preference) {
