@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercices de maths 3ᵉ corrigés : calcul littéral, Pythagore, Thalès, fonctions | Nicolas Musicki</title>
+  <meta name="description" content="Exercices de maths de 3ᵉ avec corrigés détaillés et explications : calcul littéral et identités remarquables, équations, théorèmes de Pythagore et Thalès, fonctions affines. Idéal pour réviser le brevet." />
+  <link rel="canonical" href="https://cours-maths-versailles.fr/exercices/maths-3e.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0A1422" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Exercices de maths 3ᵉ corrigés (calcul littéral, Pythagore, Thalès…)" />
+  <meta property="og:description" content="Exercices de 3ᵉ avec corrigés détaillés et explications, alignés sur le programme. Pour réviser et préparer le brevet." />
+  <meta property="og:url" content="https://cours-maths-versailles.fr/exercices/maths-3e.html" />
+  <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Exercices de maths 3ᵉ corrigés",
+    "description": "Exercices de mathématiques de 3ᵉ avec corrigés détaillés et explications : calcul littéral, équations, Pythagore, Thalès, fonctions affines.",
+    "url": "https://cours-maths-versailles.fr/exercices/maths-3e.html",
+    "inLanguage": "fr-FR",
+    "educationalLevel": "Classe de 3ᵉ (collège)",
+    "learningResourceType": "Exercices corrigés",
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "datePublished": "2026-06-23", "dateModified": "2026-06-23",
+    "author": { "@type": "Person", "name": "Nicolas Musicki", "url": "https://cours-maths-versailles.fr/", "jobTitle": "Professeur de mathématiques · Data Scientist", "sameAs": ["https://www.linkedin.com/in/nicolas-musicki-4867a4184/"] },
+    "publisher": { "@type": "Person", "name": "Nicolas Musicki" }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="brand" aria-label="Accueil — Nicolas Musicki">
+      <span class="brand-mark" aria-hidden="true">π</span>
+      <span class="brand-name">Nicolas&nbsp;Musicki</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="../blog/">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <div class="article-meta"><span class="cat">Exercices · 3ᵉ</span><span>Programme officiel</span><span>· corrigés détaillés</span></div>
+      <h1>Exercices de maths 3ᵉ corrigés</h1>
+      <p class="lead-p">
+        Une sélection d'exercices de 3ᵉ, classés par chapitre, avec <strong>corrigés détaillés</strong> et explications.
+        Parfait pour réviser au fil de l'année et préparer le <a href="../blog/reussir-le-brevet-de-maths.html">brevet de maths</a>.
+        Chaque correction se déplie quand vous le souhaitez&nbsp;: essayez d'abord, vérifiez ensuite.
+      </p>
+
+      <nav class="toc" aria-label="Sommaire">
+        <p class="toc-title">Au programme</p>
+        <ol>
+          <li><a href="#calcul-litteral">Calcul littéral &amp; identités remarquables</a></li>
+          <li><a href="#equations">Équations</a></li>
+          <li><a href="#pythagore">Théorème de Pythagore</a></li>
+          <li><a href="#thales">Théorème de Thalès</a></li>
+          <li><a href="#fonctions">Fonctions linéaires et affines</a></li>
+        </ol>
+      </nav>
+
+      <!-- 1 -->
+      <section class="chapter" id="calcul-litteral">
+        <h2>1. Calcul littéral &amp; identités remarquables</h2>
+        <div class="rappel">
+          <p class="rappel-title">À savoir</p>
+          <p>$(a+b)^2 = a^2 + 2ab + b^2$ &nbsp;·&nbsp; $(a-b)^2 = a^2 - 2ab + b^2$ &nbsp;·&nbsp; $(a+b)(a-b) = a^2 - b^2$</p>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — développer</span>
+          <p>Développer et réduire $A = (3x + 2)^2$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>On applique $(a+b)^2 = a^2 + 2ab + b^2$ avec $a = 3x$ et $b = 2$ :</p>
+              <p>$A = (3x)^2 + 2 \times 3x \times 2 + 2^2 = 9x^2 + 12x + 4.$</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — factoriser</span>
+          <p>Factoriser $B = 16x^2 - 9$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>On reconnaît une différence de deux carrés&nbsp;: $16x^2 = (4x)^2$ et $9 = 3^2$.</p>
+              <p>Donc $B = (4x)^2 - 3^2 = (4x - 3)(4x + 3).$</p>
+            </div>
+          </details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> oublier le double produit $2ab$ et écrire $(3x+2)^2 = 9x^2 + 4$.</p>
+      </section>
+
+      <!-- 2 -->
+      <section class="chapter" id="equations">
+        <h2>2. Équations</h2>
+        <div class="rappel">
+          <p class="rappel-title">À savoir</p>
+          <p>On isole l'inconnue en effectuant la même opération des deux côtés. Un <strong>produit est nul</strong> si, et seulement si, l'un de ses facteurs est nul.</p>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — équation du premier degré</span>
+          <p>Résoudre $5x - 7 = 2x + 8$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>$5x - 2x = 8 + 7$, soit $3x = 15$, donc $x = 5.$</p>
+              <p>Vérification&nbsp;: $5 \times 5 - 7 = 18$ et $2 \times 5 + 8 = 18$. ✔</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — équation produit</span>
+          <p>Résoudre $(x - 3)(2x + 1) = 0$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>Un produit est nul si l'un des facteurs est nul&nbsp;:</p>
+              <p>$x - 3 = 0$ donne $x = 3$ ; &nbsp; $2x + 1 = 0$ donne $x = -\dfrac{1}{2}.$</p>
+              <p>Les solutions sont $x = 3$ et $x = -\dfrac{1}{2}.$</p>
+            </div>
+          </details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> diviser par $x$ — on perd des solutions. On factorise plutôt.</p>
+      </section>
+
+      <!-- 3 -->
+      <section class="chapter" id="pythagore">
+        <h2>3. Théorème de Pythagore</h2>
+        <div class="rappel">
+          <p class="rappel-title">À savoir</p>
+          <p>Si un triangle $ABC$ est rectangle en $A$, alors $BC^2 = AB^2 + AC^2$ (l'hypoténuse $BC$ est le plus grand côté). La <strong>réciproque</strong> permet de prouver qu'un triangle est rectangle.</p>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — calculer une longueur</span>
+          <p>$ABC$ est rectangle en $A$, avec $AB = 6$ cm et $AC = 8$ cm. Calculer $BC$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>D'après le théorème de Pythagore&nbsp;: $BC^2 = AB^2 + AC^2 = 6^2 + 8^2 = 36 + 64 = 100.$</p>
+              <p>Donc $BC = \sqrt{100} = 10$ cm.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — réciproque</span>
+          <p>Un triangle a pour côtés $5$, $12$ et $13$ cm. Est-il rectangle&nbsp;?</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>Le plus grand côté est $13$. On compare&nbsp;: $5^2 + 12^2 = 25 + 144 = 169$ et $13^2 = 169.$</p>
+              <p>Comme $5^2 + 12^2 = 13^2$, d'après la réciproque de Pythagore, le triangle <strong>est rectangle</strong> (l'angle droit est opposé au côté de 13 cm).</p>
+            </div>
+          </details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> oublier que l'hypoténuse (le plus grand côté) doit être seule d'un côté de l'égalité.</p>
+      </section>
+
+      <!-- 4 -->
+      <section class="chapter" id="thales">
+        <h2>4. Théorème de Thalès</h2>
+        <div class="rappel">
+          <p class="rappel-title">À savoir</p>
+          <p>Si $(MN)$ est parallèle à $(BC)$, avec $A$, $M$, $B$ alignés et $A$, $N$, $C$ alignés, alors $\dfrac{AM}{AB} = \dfrac{AN}{AC} = \dfrac{MN}{BC}.$</p>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — calculer une longueur</span>
+          <p>$(MN) \parallel (BC)$. On donne $AM = 3$ cm, $AB = 8$ cm et $BC = 10$ cm. Calculer $MN$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>D'après le théorème de Thalès&nbsp;: $\dfrac{MN}{BC} = \dfrac{AM}{AB}$, donc $MN = BC \times \dfrac{AM}{AB}.$</p>
+              <p>$MN = 10 \times \dfrac{3}{8} = \dfrac{30}{8} = 3{,}75$ cm.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — calculer une autre longueur</span>
+          <p>$(MN) \parallel (BC)$. On donne $AM = 4$ cm, $AB = 6$ cm et $AN = 6$ cm. Calculer $AC$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>$\dfrac{AM}{AB} = \dfrac{AN}{AC}$, donc $AC = \dfrac{AN \times AB}{AM} = \dfrac{6 \times 6}{4} = 9$ cm.</p>
+            </div>
+          </details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> mélanger les segments. On garde toujours « petit triangle sur grand triangle » dans le même ordre.</p>
+      </section>
+
+      <!-- 5 -->
+      <section class="chapter" id="fonctions">
+        <h2>5. Fonctions linéaires et affines</h2>
+        <div class="rappel">
+          <p class="rappel-title">À savoir</p>
+          <p>Fonction <strong>linéaire</strong>&nbsp;: $f(x) = ax$. Fonction <strong>affine</strong>&nbsp;: $f(x) = ax + b$. L'<em>image</em> de $x$ est $f(x)$ ; un <em>antécédent</em> de $y$ est un $x$ tel que $f(x) = y$.</p>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — image et antécédent</span>
+          <p>Soit $f(x) = 3x - 5$. Calculer $f(4)$, puis l'antécédent de $7$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>Image&nbsp;: $f(4) = 3 \times 4 - 5 = 12 - 5 = 7.$</p>
+              <p>Antécédent de $7$&nbsp;: on résout $3x - 5 = 7$, soit $3x = 12$, donc $x = 4.$</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — déterminer une fonction linéaire</span>
+          <p>$g$ est linéaire et $g(2) = 10$. Déterminer $g(x)$ puis calculer $g(5)$.</p>
+          <details class="correction"><summary>Voir la correction</summary>
+            <div class="corr-body">
+              <p>Comme $g$ est linéaire, $g(x) = ax$ avec $a = \dfrac{g(2)}{2} = \dfrac{10}{2} = 5.$</p>
+              <p>Donc $g(x) = 5x$, et $g(5) = 5 \times 5 = 25.$</p>
+            </div>
+          </details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> confondre <em>image</em> et <em>antécédent</em>.</p>
+      </section>
+
+      <p class="article-source">
+        Exercices alignés sur le programme de cycle 4 (classe de 3ᵉ) —
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>.
+        Tous les corrigés ont été vérifiés (juin 2026).
+      </p>
+
+      <div class="article-cta">
+        <h2>Besoin d'aide pour réviser&nbsp;?</h2>
+        <p>Je propose des cours de maths à domicile à Versailles et alentours — préparation du brevet incluse. Premier cours gratuit.</p>
+        <a href="../index.html#contact" class="btn btn--primary">Me contacter</a>
+      </div>
+
+      <aside class="author-box">
+        <img src="../portrait.jpg" alt="Nicolas Musicki, professeur de mathématiques à Versailles" width="88" height="88" />
+        <div>
+          <span class="author-kicker">À propos de l'auteur</span>
+          <strong>Nicolas Musicki</strong>
+          <p>Data Scientist, diplômé d'un Bac+5 en mathématiques. J'enseigne les maths en cours particuliers à domicile à Versailles et alentours depuis deux ans.</p>
+          <p class="author-links"><a href="../index.html#contact">Me contacter</a> · <a href="https://www.linkedin.com/in/nicolas-musicki-4867a4184/" target="_blank" rel="noopener">Voir mon profil LinkedIn</a></p>
+        </div>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand"><span class="brand-mark" aria-hidden="true">π</span> Nicolas Musicki</span>
+    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay</span>
+    <nav class="footer-links" aria-label="Liens">
+      <a href="../blog/">Blog</a>
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+  </footer>
+
+  <script defer src="../vendor/katex/katex.min.js"></script>
+  <script defer src="../vendor/katex/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ],
+        throwOnError: false
+      });
+    });
+  </script>
+</body>
+</html>
