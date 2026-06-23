@@ -610,6 +610,75 @@ p { margin: 0; }
 .notfound h1 { font-size: clamp(1.5rem, 4vw, 2.3rem); margin: 0.8rem 0 0.7rem; }
 .notfound p { color: var(--ivory-dim); margin-bottom: 2.2rem; max-width: 42ch; }
 
+/* ===================== BLOG ===================== */
+.blog-intro {
+  max-width: 60ch;
+  color: var(--ivory-dim);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  margin-bottom: clamp(2.2rem, 5vw, 3.2rem);
+}
+
+/* Illustration maison (fond papier millimétré + motif doré) */
+.illus {
+  position: relative;
+  background:
+    repeating-linear-gradient(to right, transparent 0, transparent 23px, rgba(231, 185, 106, 0.07) 23px, rgba(231, 185, 106, 0.07) 24px),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 23px, rgba(231, 185, 106, 0.07) 23px, rgba(231, 185, 106, 0.07) 24px),
+    linear-gradient(135deg, var(--navy-700), var(--navy-900));
+  display: grid;
+  place-items: center;
+}
+.illus svg { width: 62%; height: 62%; overflow: visible; }
+
+/* Grille de cartes d'articles */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.2rem, 3vw, 1.8rem);
+}
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--navy-800);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+.article-card:hover { transform: translateY(-6px); border-color: var(--line); }
+.article-card .illus { aspect-ratio: 16 / 10; }
+.article-card .card-body { padding: 1.3rem 1.4rem 1.6rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.article-card .cat { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.article-card h3 { font-size: 1.18rem; line-height: 1.2; }
+.article-card p { color: var(--ivory-dim); font-size: 0.94rem; margin: 0; }
+.article-card .more { margin-top: auto; padding-top: 0.4rem; color: var(--gold-300); font-weight: 600; font-size: 0.9rem; }
+
+/* Page article */
+.article { max-width: 720px; margin: 0 auto; padding: clamp(1.8rem, 5vw, 3rem) var(--gut) clamp(3rem, 7vw, 5rem); }
+.article-banner { width: 100%; aspect-ratio: 5 / 2; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line-soft); margin-bottom: 2rem; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--ivory-fade); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+.article-meta .cat { color: var(--gold); font-weight: 600; }
+.article h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin-bottom: 1.2rem; }
+.article .lead-p { font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.4rem); line-height: 1.5; color: var(--ivory); margin-bottom: 1.8rem; }
+.article h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); margin: 2.4rem 0 0.8rem; }
+.article h3 { font-size: 1.18rem; margin: 1.6rem 0 0.5rem; color: var(--ivory); }
+.article p { color: var(--ivory-dim); line-height: 1.78; margin-bottom: 1.1rem; }
+.article ul, .article ol { color: var(--ivory-dim); margin: 0 0 1.2rem; padding-left: 1.3rem; }
+.article li { margin-bottom: 0.55rem; line-height: 1.7; }
+.article strong { color: var(--ivory); font-weight: 600; }
+.article a { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
+.article-callout { border-left: 3px solid var(--gold); background: rgba(231, 185, 106, 0.07); padding: 1rem 1.3rem; border-radius: 0 10px 10px 0; margin: 1.6rem 0; }
+.article-callout p { color: var(--ivory); margin: 0; }
+.article-cta { margin-top: 2.8rem; padding: clamp(1.6rem, 4vw, 2.4rem); border: 1px solid var(--line); border-radius: var(--radius-l); background: rgba(231, 185, 106, 0.06); text-align: center; }
+.article-cta h2 { margin: 0 0 0.6rem; }
+.article-cta p { margin: 0 0 1.4rem; }
+.article-nav { max-width: 720px; margin: 0 auto; padding: 0 var(--gut) clamp(3rem, 6vw, 4rem); }
+
+@media (max-width: 880px) {
+  .article-grid { grid-template-columns: 1fr; }
+  .article-banner { aspect-ratio: 2 / 1; }
+}
+
 /* ===================== MOTION (discret, CSS only) ===================== */
 @media (prefers-reduced-motion: no-preference) {
   .hero-text > *, .hero-portrait, .section-head, .about-grid,

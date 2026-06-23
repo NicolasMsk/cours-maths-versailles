@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cours-maths-versailles.fr/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://cours-maths-versailles.fr/blog/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://cours-maths-versailles.fr/blog/credit-impot-cours-maths-domicile.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/reprendre-confiance-en-maths.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/specialite-maths-terminale.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/preparer-le-bac-de-maths.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/reussir-le-brevet-de-maths.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/progresser-en-maths-au-college.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/cours-particuliers-ou-en-ligne.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/prix-cours-particulier-maths.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/bien-demarrer-la-seconde-en-maths.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cours-maths-versailles.fr/blog/choisir-prof-maths-versailles.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url>
     <loc>https://cours-maths-versailles.fr/mentions-legales.html</loc>
     <lastmod>2026-06-21</lastmod>
