@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercices de maths 1re spé corrigés : second degré, dérivation, suites, produit scalaire | Nicolas Musicki</title>
+  <meta name="description" content="Exercices de spécialité maths de première avec corrigés détaillés : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Programme de première spécialité." />
+  <link rel="canonical" href="https://cours-maths-versailles.fr/exercices/maths-1re.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0A1422" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Exercices de maths 1re spé corrigés" />
+  <meta property="og:description" content="Exercices de spécialité maths de première avec corrigés détaillés : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Programme de première spécialité." />
+  <meta property="og:url" content="https://cours-maths-versailles.fr/exercices/maths-1re.html" />
+  <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Exercices de maths 1re spé corrigés",
+    "description": "Exercices de spécialité maths de première avec corrigés détaillés : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Programme de première spécialité.",
+    "url": "https://cours-maths-versailles.fr/exercices/maths-1re.html",
+    "inLanguage": "fr-FR",
+    "educationalLevel": "Classe de 1re spé",
+    "learningResourceType": "Exercices corrigés",
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "datePublished": "2026-06-23", "dateModified": "2026-06-23",
+    "author": { "@type": "Person", "name": "Nicolas Musicki", "url": "https://cours-maths-versailles.fr/", "jobTitle": "Professeur de mathématiques · Data Scientist", "sameAs": ["https://www.linkedin.com/in/nicolas-musicki-4867a4184/"] },
+    "publisher": { "@type": "Person", "name": "Nicolas Musicki" }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="brand" aria-label="Accueil — Nicolas Musicki">
+      <span class="brand-mark" aria-hidden="true">π</span>
+      <span class="brand-name">Nicolas&nbsp;Musicki</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="index.html">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <div class="article-meta"><span class="cat">Exercices · 1re spé</span><span>Programme officiel</span><span>· corrigés détaillés</span></div>
+      <h1>Exercices de maths 1re spé corrigés</h1>
+      <p class="lead-p">
+        Une sélection d'exercices de 1re spé, classés par chapitre, avec <strong>corrigés détaillés</strong> et explications.
+        Essayez d'abord, puis dépliez la correction pour vérifier. Tous les corrigés ont été vérifiés.
+      </p>
+
+      <nav class="toc" aria-label="Sommaire">
+        <p class="toc-title">Au programme</p>
+        <ol>
+          <li><a href="#second-degre">Second degré</a></li>
+          <li><a href="#derivation">Dérivation</a></li>
+          <li><a href="#suites">Suites</a></li>
+          <li><a href="#produit-scalaire">Produit scalaire</a></li>
+          <li><a href="#proba-cond">Probabilités conditionnelles</a></li>
+        </ol>
+      </nav>
+
+      <section class="chapter" id="second-degre">
+        <h2>1. Second degré</h2>
+        <div class="rappel"><p class="rappel-title">À savoir</p><p>Pour $ax^2 + bx + c = 0$&nbsp;: discriminant $\Delta = b^2 - 4ac$. Si $\Delta > 0$, deux racines $x = \dfrac{-b \pm \sqrt{\Delta}}{2a}$.</p></div>
+        <div class="exo">
+          <span class="exo-num">Exercice 1</span>
+          <p>Résoudre $x^2 - 5x + 6 = 0$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$\Delta = (-5)^2 - 4 \times 1 \times 6 = 25 - 24 = 1$. Racines&nbsp;: $x = \dfrac{5 \pm 1}{2}$, soit $x = 3$ ou $x = 2$.</p></div></details>
+        </div>
+        <div class="exo">
+          <span class="exo-num">Exercice 2</span>
+          <p>Résoudre $x^2 + 2x - 3 = 0$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$\Delta = 4 + 12 = 16$. Racines&nbsp;: $x = \dfrac{-2 \pm 4}{2}$, soit $x = 1$ ou $x = -3$.</p></div></details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> erreur de signe dans le calcul de $\Delta$.</p>
+      </section>
+
+      <section class="chapter" id="derivation">
+        <h2>2. Dérivation</h2>
+        <div class="rappel"><p class="rappel-title">À savoir</p><p>$(x^n)' = n x^{n-1}$. La dérivée d'une somme est la somme des dérivées.</p></div>
+        <div class="exo">
+          <span class="exo-num">Exercice 1</span>
+          <p>Dériver $f(x) = 3x^2 - 5x + 1$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$f'(x) = 6x - 5$.</p></div></details>
+        </div>
+        <div class="exo">
+          <span class="exo-num">Exercice 2</span>
+          <p>Dériver $f(x) = 2x^3 - 4x$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$f'(x) = 6x^2 - 4$.</p></div></details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> oublier que la dérivée d'une constante est nulle.</p>
+      </section>
+
+      <section class="chapter" id="suites">
+        <h2>3. Suites</h2>
+        <div class="rappel"><p class="rappel-title">À savoir</p><p>Suite arithmétique de raison $r$&nbsp;: $u_n = u_0 + nr$. Suite géométrique de raison $q$&nbsp;: $u_n = u_0 \times q^n$.</p></div>
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — arithmétique</span>
+          <p>$u_0 = 3$ et de raison $r = 2$. Exprimer $u_n$ puis calculer $u_5$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$u_n = 3 + 2n$, donc $u_5 = 3 + 10 = 13$.</p></div></details>
+        </div>
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — géométrique</span>
+          <p>$u_0 = 2$ et de raison $q = 3$. Calculer $u_3$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$u_n = 2 \times 3^n$, donc $u_3 = 2 \times 27 = 54$.</p></div></details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> confondre suite arithmétique (on ajoute) et géométrique (on multiplie).</p>
+      </section>
+
+      <section class="chapter" id="produit-scalaire">
+        <h2>4. Produit scalaire</h2>
+        <div class="rappel"><p class="rappel-title">À savoir</p><p>Pour $\vec{u}(x\,;y)$ et $\vec{v}(x'\,;y')$&nbsp;: $\vec{u} \cdot \vec{v} = xx' + yy'$. Deux vecteurs sont orthogonaux si $\vec{u} \cdot \vec{v} = 0$.</p></div>
+        <div class="exo">
+          <span class="exo-num">Exercice 1 — calcul</span>
+          <p>$\vec{u}(2\,;3)$ et $\vec{v}(4\,;-1)$. Calculer $\vec{u} \cdot \vec{v}$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$\vec{u} \cdot \vec{v} = 2 \times 4 + 3 \times (-1) = 8 - 3 = 5$.</p></div></details>
+        </div>
+        <div class="exo">
+          <span class="exo-num">Exercice 2 — orthogonalité</span>
+          <p>$\vec{u}(1\,;2)$ et $\vec{v}(4\,;-2)$ sont-ils orthogonaux&nbsp;?</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$\vec{u} \cdot \vec{v} = 1 \times 4 + 2 \times (-2) = 4 - 4 = 0$&nbsp;: oui, ils sont orthogonaux.</p></div></details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> additionner les coordonnées au lieu de multiplier terme à terme.</p>
+      </section>
+
+      <section class="chapter" id="proba-cond">
+        <h2>5. Probabilités conditionnelles</h2>
+        <div class="rappel"><p class="rappel-title">À savoir</p><p>$P_A(B) = \dfrac{P(A \cap B)}{P(A)}$ (probabilité de $B$ sachant $A$).</p></div>
+        <div class="exo">
+          <span class="exo-num">Exercice 1</span>
+          <p>$P(A) = 0{,}5$ et $P(A \cap B) = 0{,}2$. Calculer $P_A(B)$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$P_A(B) = \dfrac{0{,}2}{0{,}5} = 0{,}4$.</p></div></details>
+        </div>
+        <div class="exo">
+          <span class="exo-num">Exercice 2</span>
+          <p>$P(A) = 0{,}4$ et $P_A(B) = 0{,}25$. Calculer $P(A \cap B)$.</p>
+          <details class="correction"><summary>Voir la correction</summary><div class="corr-body"><p>$P(A \cap B) = P(A) \times P_A(B) = 0{,}4 \times 0{,}25 = 0{,}1$.</p></div></details>
+        </div>
+        <p class="erreurs"><strong>Erreur fréquente&nbsp;:</strong> inverser numérateur et dénominateur dans la formule.</p>
+      </section>
+
+      <p class="article-source">
+        Exercices alignés sur le programme officiel (1re spé, lycée) —
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Corrigés vérifiés (juin 2026).
+      </p>
+
+      <div class="article-cta">
+        <h2>Besoin d'aide pour progresser&nbsp;?</h2>
+        <p>Cours de maths à domicile à Versailles et alentours, tous niveaux jusqu'au bac. Premier cours gratuit.</p>
+        <a href="../index.html#contact" class="btn btn--primary">Me contacter</a>
+      </div>
+
+      <aside class="author-box">
+        <img src="../portrait.jpg" alt="Nicolas Musicki, professeur de mathématiques à Versailles" width="88" height="88" />
+        <div>
+          <span class="author-kicker">À propos de l'auteur</span>
+          <strong>Nicolas Musicki</strong>
+          <p>Data Scientist, diplômé d'un Bac+5 en mathématiques. J'enseigne les maths en cours particuliers à domicile à Versailles et alentours depuis deux ans.</p>
+          <p class="author-links"><a href="../index.html#contact">Me contacter</a> · <a href="https://www.linkedin.com/in/nicolas-musicki-4867a4184/" target="_blank" rel="noopener">Voir mon profil LinkedIn</a></p>
+        </div>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand"><span class="brand-mark" aria-hidden="true">π</span> Nicolas Musicki</span>
+    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay</span>
+    <nav class="footer-links" aria-label="Liens">
+      <a href="index.html">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+  </footer>
+
+  <script defer src="../vendor/katex/katex.min.js"></script>
+  <script defer src="../vendor/katex/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ],
+        throwOnError: false
+      });
+    });
+  </script>
+</body>
+</html>

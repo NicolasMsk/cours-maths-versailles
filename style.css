@@ -734,6 +734,7 @@ p { margin: 0; }
 .erreurs { font-size: 0.92rem; color: var(--ivory-dim); margin-top: 0.8rem; }
 .erreurs strong { color: var(--gold-300); }
 .katex { color: var(--ivory); }
+.level-tag { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 3.6rem); color: var(--gold); letter-spacing: 0.02em; }
 .article-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--ivory-fade); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
 .article-meta .cat { color: var(--gold); font-weight: 600; }
 .article h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin-bottom: 1.2rem; }
