@@ -229,20 +229,13 @@
   <main>
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="accueil" aria-labelledby="hero-title">
-      <svg class="hero-curve" viewBox="0 0 520 420" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-        <path d="M8,386 C96,386 132,250 208,206 C284,162 308,78 512,44" stroke-width="2.5" stroke-linecap="round" />
-        <circle cx="208" cy="206" r="5" />
-        <circle cx="360" cy="104" r="4" />
-        <circle cx="96" cy="340" r="3.5" />
-      </svg>
-      <div class="hero-grid">
+      <div class="hero-inner">
         <div class="hero-text">
-          <span class="eyebrow">Cours particuliers de mathématiques à Versailles</span>
-          <h1 id="hero-title">Reprenez <em>confiance</em><br />en&nbsp;maths.</h1>
-          <p class="lead">
-            Du soutien scolaire en mathématiques clair et bienveillant, à votre
-            domicile à Versailles, Viroflay et Le Chesnay. On comprend d'abord,
-            on apprend ensuite.
+          <p class="hero-eyebrow"><span class="rule" aria-hidden="true"></span>Cours particuliers de mathématiques · Versailles</p>
+          <h1 id="hero-title" class="hero-title">Reprenez <em>confiance</em><br />en&nbsp;maths.</h1>
+          <p class="hero-lead">
+            Du soutien scolaire clair et bienveillant, à votre domicile à Versailles, Viroflay
+            et Le Chesnay. On comprend d'abord, on apprend ensuite.
           </p>
           <div class="hero-actions">
             <a href="tel:+33609365691" class="btn btn--primary">
@@ -254,27 +247,22 @@
               Envoyer un e-mail
             </a>
           </div>
-          <div class="hero-tags">
-            <span class="tag tag--accent">1er cours gratuit</span>
-            <span class="tag">50&nbsp;€/h · soit 25&nbsp;€ après crédit d'impôt</span>
-            <span class="tag">Tous niveaux jusqu'au bac</span>
-          </div>
+          <ul class="hero-trust">
+            <li><strong>1er</strong><span>cours gratuit</span></li>
+            <li><strong>−50&nbsp;%</strong><span>crédit d'impôt</span></li>
+            <li><strong>Bac+5</strong><span>Data Scientist</span></li>
+            <li><strong><span data-count="4">4</span>&nbsp;ans</strong><span>d'expérience</span></li>
+          </ul>
         </div>
 
-        <div class="hero-portrait">
-          <!--
-            POUR AJOUTER VOTRE PHOTO :
-            1) Placez un fichier "portrait.jpg" dans ce dossier.
-            2) Dans style.css, cherchez ".portrait-frame" et décommentez la ligne
-               background-image (voir le commentaire juste au-dessus).
-            Par défaut, un joli monogramme "NM" s'affiche.
-          -->
+        <div class="hero-visual">
           <div class="portrait-frame">
             <span class="portrait-placeholder" aria-hidden="true">NM</span>
           </div>
-          <div class="portrait-badge">
-            <strong><span data-count="4">4</span>&nbsp;ans</strong>
-            <span>d'enseignement</span>
+          <div class="hero-card">
+            <span class="hc-label">À partir de</span>
+            <span class="hc-price">25&nbsp;€<span class="hc-unit">&nbsp;/h</span></span>
+            <span class="hc-note">après crédit d'impôt · 1er cours offert</span>
           </div>
         </div>
       </div>
