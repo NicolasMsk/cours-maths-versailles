@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cours de maths Terminale spé : fiches de cours et programme détaillé (bac) | Nicolas Musicki</title>
-  <meta name="description" content="Fiches de cours de spécialité maths de terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, formules et exemples, pour le bac." />
+  <title>Cours de maths Terminale spé : fiches détaillées et programme (bac) | Nicolas Musicki</title>
+  <meta name="description" content="Cours de spécialité maths terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, méthode et exemples résolus, pour le bac." />
   <link rel="canonical" href="https://cours-maths-versailles.fr/cours/maths-terminale.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0A1422" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Cours de maths Terminale spé" />
-  <meta property="og:description" content="Fiches de cours de spécialité maths de terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, formules et exemples, pour le bac." />
+  <meta property="og:description" content="Cours de spécialité maths terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, méthode et exemples résolus, pour le bac." />
   <meta property="og:url" content="https://cours-maths-versailles.fr/cours/maths-terminale.html" />
   <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -24,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "Cours de maths Terminale spé",
-    "description": "Fiches de cours de spécialité maths de terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, formules et exemples, pour le bac.",
+    "description": "Cours de spécialité maths terminale : limites, exponentielle, logarithme, intégrales, loi binomiale. Définitions, théorèmes, méthode et exemples résolus, pour le bac.",
     "url": "https://cours-maths-versailles.fr/cours/maths-terminale.html",
     "inLanguage": "fr-FR",
     "educationalLevel": "Classe de Terminale spé",
@@ -61,67 +61,83 @@
   <main>
     <article class="article">
       <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> › <a href="index.html">Cours</a> › <span aria-current="page">Maths Terminale spé</span></nav>
-      <div class="article-meta"><span class="cat">Cours · Terminale spé</span><span>Programme officiel</span><span>· fiches + exemples</span></div>
+      <div class="article-meta"><span class="cat">Cours · Terminale spé</span><span>Programme officiel</span><span>· fiches détaillées</span></div>
       <h1>Cours de maths Terminale spé</h1>
       <p class="lead-p">
-        Les <strong>fiches de cours</strong> de Terminale spé, chapitre par chapitre&nbsp;: le programme détaillé, les définitions et
-        formules clés, et un exemple résolu. Chaque fiche renvoie vers les <a href="../exercices/maths-terminale.html">exercices corrigés</a> correspondants.
+        Les <strong>fiches de cours</strong> de Terminale spé, chapitre par chapitre&nbsp;: programme détaillé, définitions et propriétés,
+        <strong>formules clés</strong>, <strong>méthode pas à pas</strong> et deux exemples résolus. Chaque fiche renvoie vers les
+        <a href="../exercices/maths-terminale.html">exercices corrigés</a> correspondants.
       </p>
 
       <nav class="toc" aria-label="Sommaire">
         <p class="toc-title">Au programme</p>
         <ol>
-          <li><a href="#limites">Limites</a></li>
-          <li><a href="#exp">Exponentielle</a></li>
-          <li><a href="#ln">Logarithme népérien</a></li>
-          <li><a href="#integrales">Intégrales</a></li>
+          <li><a href="#limites">Limites de fonctions</a></li>
+          <li><a href="#exp">Fonction exponentielle</a></li>
+          <li><a href="#ln">Fonction logarithme népérien</a></li>
+          <li><a href="#integrales">Primitives et intégrales</a></li>
           <li><a href="#binomiale">Loi binomiale</a></li>
         </ol>
       </nav>
 
       <section class="chapter" id="limites">
-        <h2>1. Limites</h2>
+        <h2>1. Limites de fonctions</h2>
         <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer une limite en l’infini</li><li>Lever une forme indéterminée</li><li>Interpréter une asymptote</li></ul></div>
-        <div class="cours-body"><p>En $\pm\infty$, une fonction polynôme a la même limite que son terme de plus haut degré ; une fraction rationnelle, la limite du <strong>rapport des termes dominants</strong>. On factorise pour lever une forme indéterminée.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$\displaystyle\lim_{x \to +\infty} \dfrac{2x^2 + 1}{x^2 - 3} = \lim \dfrac{2x^2}{x^2} = 2$.</p></div>
+        <div class="cours-body"><p>Une fonction <strong>polynôme</strong> a, en $\pm\infty$, la limite de son terme de plus haut degré ; une <strong>fraction rationnelle</strong>, la limite du rapport des termes dominants. On factorise pour lever une forme indéterminée.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>En $\pm\infty$&nbsp;: polynôme $\sim$ terme dominant</li><li>Asymptote horizontale&nbsp;: $\lim_{x\to+\infty} f(x) = \ell$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Repérer la forme indéterminée</li><li>Factoriser par le terme dominant</li><li>Simplifier puis conclure</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$\displaystyle\lim_{x\to+\infty}\dfrac{2x^2+1}{x^2-3} = \lim \dfrac{2x^2}{x^2} = 2$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$\displaystyle\lim_{x\to+\infty}(x^2 - x) = \lim x(x-1) = +\infty$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-terminale.html#limites">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="exp">
-        <h2>2. Exponentielle</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les propriétés de $\exp$</li><li>Dériver $e^{u}$</li><li>Résoudre des équations avec exponentielle</li></ul></div>
-        <div class="cours-body"><p>La fonction <strong>exponentielle</strong> vérifie $e^{a+b} = e^a e^b$ et $\left(e^{u}\right)' = u' \, e^{u}$. Elle est strictement positive et strictement croissante sur $\mathbb{R}$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$f(x) = x\,e^{x} \Rightarrow f'(x) = e^{x} + x\,e^{x} = (1 + x)\,e^{x}$.</p></div>
+        <h2>2. Fonction exponentielle</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les propriétés algébriques</li><li>Dériver $e^{u}$</li><li>Résoudre équations et inéquations</li></ul></div>
+        <div class="cours-body"><p>L’<strong>exponentielle</strong> est strictement positive et strictement croissante sur $\mathbb{R}$, avec $e^0 = 1$.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$e^{a+b} = e^a e^b$, $e^{-a} = \dfrac{1}{e^a}$</li><li>$\left(e^{u}\right)' = u'\,e^{u}$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Identifier $u$ et calculer $u'$</li><li>Appliquer $(e^u)' = u' e^u$</li><li>Factoriser par $e^u$ (toujours $>0$) pour étudier le signe</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$f(x) = e^{2x} \Rightarrow f'(x) = 2\,e^{2x}$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$f(x) = x\,e^{x} \Rightarrow f'(x) = e^{x} + x\,e^{x} = (1+x)\,e^{x}$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-terminale.html#exp">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="ln">
-        <h2>3. Logarithme népérien</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les propriétés de $\ln$</li><li>Résoudre des équations avec $\ln$ et $\exp$</li><li>Utiliser la réciprocité</li></ul></div>
-        <div class="cours-body"><p>Le <strong>logarithme népérien</strong> $\ln$ est la réciproque de $\exp$&nbsp;: $\ln(e^x) = x$ et $e^{\ln x} = x$ (pour $x > 0$). De plus $\ln(ab) = \ln a + \ln b$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$e^{x} = 5 \Rightarrow x = \ln 5$ &nbsp;;&nbsp; $\ln(2x) = \ln 6 \Rightarrow x = 3$.</p></div>
+        <h2>3. Fonction logarithme népérien</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les propriétés de $\ln$</li><li>Utiliser la réciprocité avec $\exp$</li><li>Résoudre des équations</li></ul></div>
+        <div class="cours-body"><p>Le <strong>logarithme népérien</strong> $\ln$ est la fonction réciproque de l’exponentielle, définie sur $]0\,;+\infty[$.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$\ln(e^x) = x$ et $e^{\ln x} = x$ ($x>0$)</li><li>$\ln(ab) = \ln a + \ln b$, $\ln\!\left(\dfrac{a}{b}\right) = \ln a - \ln b$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Isoler l’exponentielle ou le logarithme</li><li>Appliquer $\ln$ ou $\exp$ aux deux membres</li><li>Vérifier le domaine ($x>0$ pour $\ln$)</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$e^{x} = 5 \Rightarrow x = \ln 5$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$\ln(2x) = \ln 6 \Rightarrow 2x = 6 \Rightarrow x = 3$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-terminale.html#ln">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="integrales">
-        <h2>4. Intégrales</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître la notion de primitive</li><li>Calculer une intégrale</li><li>Interpréter une aire</li></ul></div>
-        <div class="cours-body"><p>Une <strong>primitive</strong> $F$ de $f$ vérifie $F' = f$. L’<strong>intégrale</strong> vaut alors&nbsp;: $$\int_a^b f(x)\,dx = F(b) - F(a).$$ Elle s’interprète, pour $f \geq 0$, comme une <strong>aire</strong> sous la courbe.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$\displaystyle\int_0^1 2x\,dx = [x^2]_0^1 = 1$.</p></div>
+        <h2>4. Primitives et intégrales</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître une primitive</li><li>Calculer une intégrale</li><li>Interpréter une aire</li></ul></div>
+        <div class="cours-body"><p>Une <strong>primitive</strong> $F$ de $f$ vérifie $F' = f$. L’<strong>intégrale</strong> se calcule à partir d’une primitive et s’interprète, pour $f \geq 0$, comme l’aire sous la courbe.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$</li><li>Primitives usuelles&nbsp;: $x^n \to \dfrac{x^{n+1}}{n+1}$, $\dfrac{1}{x} \to \ln x$, $e^x \to e^x$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Déterminer une primitive $F$ de $f$</li><li>Calculer $F(b)$ et $F(a)$</li><li>Faire la différence $F(b) - F(a)$</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$\displaystyle\int_0^1 2x\,dx = [x^2]_0^1 = 1 - 0 = 1$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$\displaystyle\int_1^2 \dfrac{1}{x}\,dx = [\ln x]_1^2 = \ln 2 - \ln 1 = \ln 2$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-terminale.html#integrales">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="binomiale">
         <h2>5. Loi binomiale</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître un schéma de Bernoulli</li><li>Calculer $P(X=k)$</li><li>Calculer l’espérance</li></ul></div>
-        <div class="cours-body"><p>Si $X$ suit la <strong>loi binomiale</strong> $\mathcal{B}(n\,;p)$ (répétition de $n$ épreuves indépendantes de probabilité $p$)&nbsp;: $$P(X = k) = \binom{n}{k} p^k (1-p)^{\,n-k}, \qquad E(X) = np.$$</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$X \sim \mathcal{B}(3\,;0{,}5)$&nbsp;: $P(X = 1) = \binom{3}{1}(0{,}5)^3 = 0{,}375$.</p></div>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître un schéma de Bernoulli</li><li>Calculer $P(X=k)$</li><li>Calculer l’espérance, utiliser la loi des grands nombres</li></ul></div>
+        <div class="cours-body"><p>La <strong>loi binomiale</strong> $\mathcal{B}(n\,;p)$ compte le nombre de succès lors de $n$ épreuves de Bernoulli indépendantes, de probabilité de succès $p$.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$P(X = k) = \binom{n}{k} p^k (1-p)^{\,n-k}$</li><li>$E(X) = np$, $V(X) = np(1-p)$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Vérifier l’indépendance et le « succès / échec »</li><li>Identifier $n$ et $p$</li><li>Appliquer la formule de $P(X=k)$ ou de $E(X)$</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$X \sim \mathcal{B}(10\,;0{,}3)$&nbsp;: $E(X) = 10 \times 0{,}3 = 3$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$X \sim \mathcal{B}(3\,;0{,}5)$&nbsp;: $P(X = 1) = \binom{3}{1}(0{,}5)^1(0{,}5)^2 = 0{,}375$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-terminale.html#binomiale">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <p class="article-source">
         Fiches alignées sur le programme officiel (Terminale spé, lycée) —
-        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu vérifié (juin 2026).
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu et corrigés vérifiés (juin 2026).
       </p>
 
       <div class="article-cta">

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cours de maths 1re spé : fiches de cours et programme détaillé | Nicolas Musicki</title>
-  <meta name="description" content="Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples." />
+  <title>Cours de maths 1re spé : fiches détaillées et programme | Nicolas Musicki</title>
+  <meta name="description" content="Cours de spécialité maths première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes, méthode et exemples." />
   <link rel="canonical" href="https://cours-maths-versailles.fr/cours/maths-1re.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0A1422" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Cours de maths 1re spé" />
-  <meta property="og:description" content="Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples." />
+  <meta property="og:description" content="Cours de spécialité maths première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes, méthode et exemples." />
   <meta property="og:url" content="https://cours-maths-versailles.fr/cours/maths-1re.html" />
   <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -24,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "Cours de maths 1re spé",
-    "description": "Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples.",
+    "description": "Cours de spécialité maths première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes, méthode et exemples.",
     "url": "https://cours-maths-versailles.fr/cours/maths-1re.html",
     "inLanguage": "fr-FR",
     "educationalLevel": "Classe de 1re spé",
@@ -61,11 +61,12 @@
   <main>
     <article class="article">
       <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> › <a href="index.html">Cours</a> › <span aria-current="page">Maths 1re spé</span></nav>
-      <div class="article-meta"><span class="cat">Cours · 1re spé</span><span>Programme officiel</span><span>· fiches + exemples</span></div>
+      <div class="article-meta"><span class="cat">Cours · 1re spé</span><span>Programme officiel</span><span>· fiches détaillées</span></div>
       <h1>Cours de maths 1re spé</h1>
       <p class="lead-p">
-        Les <strong>fiches de cours</strong> de 1re spé, chapitre par chapitre&nbsp;: le programme détaillé, les définitions et
-        formules clés, et un exemple résolu. Chaque fiche renvoie vers les <a href="../exercices/maths-1re.html">exercices corrigés</a> correspondants.
+        Les <strong>fiches de cours</strong> de 1re spé, chapitre par chapitre&nbsp;: programme détaillé, définitions et propriétés,
+        <strong>formules clés</strong>, <strong>méthode pas à pas</strong> et deux exemples résolus. Chaque fiche renvoie vers les
+        <a href="../exercices/maths-1re.html">exercices corrigés</a> correspondants.
       </p>
 
       <nav class="toc" aria-label="Sommaire">
@@ -73,7 +74,7 @@
         <ol>
           <li><a href="#second-degre">Second degré</a></li>
           <li><a href="#derivation">Dérivation</a></li>
-          <li><a href="#suites">Suites</a></li>
+          <li><a href="#suites">Suites numériques</a></li>
           <li><a href="#produit-scalaire">Produit scalaire</a></li>
           <li><a href="#proba-cond">Probabilités conditionnelles</a></li>
         </ol>
@@ -81,47 +82,62 @@
 
       <section class="chapter" id="second-degre">
         <h2>1. Second degré</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer le discriminant</li><li>Résoudre $ax^2+bx+c=0$</li><li>Interpréter le signe de Δ</li></ul></div>
-        <div class="cours-body"><p>Pour $ax^2 + bx + c = 0$ ($a \neq 0$), on calcule le <strong>discriminant</strong> $\Delta = b^2 - 4ac$. Si $\Delta > 0$, deux racines $x = \dfrac{-b \pm \sqrt{\Delta}}{2a}$ ; si $\Delta = 0$, une racine double ; si $\Delta < 0$, aucune racine réelle.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$x^2 - 5x + 6 = 0$&nbsp;: $\Delta = 1$, racines $3$ et $2$.</p></div>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer le discriminant</li><li>Résoudre $ax^2+bx+c=0$</li><li>Factoriser, étudier le signe du trinôme</li></ul></div>
+        <div class="cours-body"><p>On étudie le trinôme $ax^2 + bx + c$ ($a \neq 0$) à l’aide du <strong>discriminant</strong> $\Delta$. Son signe donne le nombre de racines.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$\Delta = b^2 - 4ac$</li><li>Si $\Delta > 0$&nbsp;: $x = \dfrac{-b \pm \sqrt{\Delta}}{2a}$</li><li>Si $\Delta = 0$&nbsp;: racine double $x = \dfrac{-b}{2a}$ ; si $\Delta < 0$&nbsp;: aucune racine réelle</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Identifier $a$, $b$, $c$</li><li>Calculer $Delta$</li><li>Conclure selon le signe de $Delta$</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$x^2 - 5x + 6 = 0$&nbsp;: $\Delta = 25 - 24 = 1$, racines $\dfrac{5 \pm 1}{2}$, soit $3$ et $2$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$x^2 + 2x - 3 = 0$&nbsp;: $\Delta = 16$, racines $\dfrac{-2 \pm 4}{2}$, soit $1$ et $-3$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-1re.html#second-degre">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="derivation">
         <h2>2. Dérivation</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les dérivées usuelles</li><li>Dériver une somme et un produit par un réel</li><li>Interpréter $f'$ (variations, tangente)</li></ul></div>
-        <div class="cours-body"><p>La <strong>dérivée</strong> de $x^n$ est $n x^{n-1}$. La dérivée d’une somme est la somme des dérivées ; la dérivée d’une constante est nulle. Le signe de $f'$ donne les <strong>variations</strong> de $f$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$f(x) = 3x^2 - 5x + 1 \Rightarrow f'(x) = 6x - 5$.</p></div>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les dérivées usuelles</li><li>Dériver somme, produit par un réel</li><li>Étudier les variations, la tangente</li></ul></div>
+        <div class="cours-body"><p>Le <strong>nombre dérivé</strong> $f'(a)$ est le coefficient directeur de la tangente en $a$. Le <strong>signe de $f'$</strong> donne les variations de $f$.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$(x^n)' = n x^{n-1}$</li><li>$(u + v)' = u' + v'$, $(k u)' = k u'$</li><li>Tangente en $a$&nbsp;: $y = f'(a)(x - a) + f(a)$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Dériver terme à terme</li><li>Étudier le signe de $f'(x)$</li><li>En déduire le tableau de variations</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$f(x) = 3x^2 - 5x + 1 \Rightarrow f'(x) = 6x - 5$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$f(x) = 2x^3 - 4x \Rightarrow f'(x) = 6x^2 - 4$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-1re.html#derivation">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="suites">
-        <h2>3. Suites</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître une suite arithmétique ou géométrique</li><li>Exprimer $u_n$ en fonction de $n$</li><li>Calculer un terme</li></ul></div>
-        <div class="cours-body"><p><strong>Arithmétique</strong> (on ajoute la raison $r$)&nbsp;: $u_n = u_0 + nr$. <strong>Géométrique</strong> (on multiplie par la raison $q$)&nbsp;: $u_n = u_0 \times q^n$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$u_0 = 2$, $q = 3$&nbsp;: $u_n = 2 \times 3^n$, donc $u_3 = 54$.</p></div>
+        <h2>3. Suites numériques</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître arithmétique / géométrique</li><li>Exprimer $u_n$ en fonction de $n$</li><li>Calculer un terme, étudier le sens de variation</li></ul></div>
+        <div class="cours-body"><p>Une suite <strong>arithmétique</strong> augmente d’un pas constant (la raison $r$)&nbsp;; une suite <strong>géométrique</strong> est multipliée par une raison $q$ constante.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>Arithmétique&nbsp;: $u_n = u_0 + nr$</li><li>Géométrique&nbsp;: $u_n = u_0 \times q^n$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Calculer la raison ($u_{n+1}-u_n$ ou $u_{n+1}/u_n$)</li><li>Écrire la formule explicite</li><li>Remplacer $n$ par la valeur voulue</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>Arithmétique $u_0 = 3$, $r = 2$&nbsp;: $u_n = 3 + 2n$, donc $u_5 = 13$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>Géométrique $u_0 = 2$, $q = 3$&nbsp;: $u_n = 2 \times 3^n$, donc $u_3 = 54$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-1re.html#suites">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="produit-scalaire">
         <h2>4. Produit scalaire</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer un produit scalaire</li><li>Tester l’orthogonalité</li><li>Utiliser les coordonnées</li></ul></div>
-        <div class="cours-body"><p>Pour $\vec{u}(x\,;y)$ et $\vec{v}(x'\,;y')$&nbsp;: $\vec{u} \cdot \vec{v} = xx' + yy'$. Deux vecteurs non nuls sont <strong>orthogonaux</strong> si, et seulement si, $\vec{u} \cdot \vec{v} = 0$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$\vec{u}(1\,;2)$, $\vec{v}(4\,;-2)$&nbsp;: $\vec{u} \cdot \vec{v} = 4 - 4 = 0$, vecteurs orthogonaux.</p></div>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer un produit scalaire avec les coordonnées</li><li>Tester l’orthogonalité</li><li>Utiliser $\vec{u}\cdot\vec{v} = \|\vec{u}\|\,\|\vec{v}\|\cos\theta$</li></ul></div>
+        <div class="cours-body"><p>Le <strong>produit scalaire</strong> mesure « l’alignement » de deux vecteurs. Il est nul si, et seulement si, les vecteurs sont <strong>orthogonaux</strong>.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>Coordonnées&nbsp;: $\vec{u}\cdot\vec{v} = xx' + yy'$</li><li>$\vec{u}\cdot\vec{v} = \|\vec{u}\|\,\|\vec{v}\|\cos\theta$</li><li>Orthogonaux $\iff \vec{u}\cdot\vec{v} = 0$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Lire les coordonnées des vecteurs</li><li>Calculer $xx' + yy'$</li><li>Conclure (valeur, ou orthogonalité si nul)</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$\vec{u}(2\,;3)$, $\vec{v}(4\,;-1)$&nbsp;: $\vec{u}\cdot\vec{v} = 8 - 3 = 5$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$\vec{u}(1\,;2)$, $\vec{v}(4\,;-2)$&nbsp;: $\vec{u}\cdot\vec{v} = 4 - 4 = 0$&nbsp;: vecteurs orthogonaux.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-1re.html#produit-scalaire">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <section class="chapter" id="proba-cond">
         <h2>5. Probabilités conditionnelles</h2>
-        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Définir une probabilité conditionnelle</li><li>Utiliser un arbre pondéré</li><li>Appliquer la formule des probabilités</li></ul></div>
-        <div class="cours-body"><p>La probabilité de $B$ <strong>sachant $A$</strong> est $P_A(B) = \dfrac{P(A \cap B)}{P(A)}$, d’où $P(A \cap B) = P(A) \times P_A(B)$.</p></div>
-        <div class="exemple"><p class="exemple-title">Exemple</p><p>$P(A) = 0{,}5$, $P(A \cap B) = 0{,}2$&nbsp;: $P_A(B) = \dfrac{0{,}2}{0{,}5} = 0{,}4$.</p></div>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Définir une probabilité conditionnelle</li><li>Utiliser un arbre pondéré</li><li>Appliquer la formule des probabilités totales</li></ul></div>
+        <div class="cours-body"><p>La probabilité de $B$ <strong>sachant $A$</strong> tient compte de l’information « $A$ est réalisé ». Sur un arbre, on multiplie le long des branches.</p></div>
+        <div class="formules"><p class="formules-title">Formules clés</p><ul><li>$P_A(B) = \dfrac{P(A \cap B)}{P(A)}$</li><li>$P(A \cap B) = P(A) \times P_A(B)$</li></ul></div>
+        <div class="methode"><p class="methode-title">Méthode</p><ol><li>Repérer l’événement « sachant »</li><li>Appliquer la formule adaptée</li><li>Vérifier que les probabilités sont entre 0 et 1</li></ol></div>
+        <div class="exemple"><p class="exemple-title">Exemple 1</p><p>$P(A) = 0{,}5$ et $P(A \cap B) = 0{,}2$&nbsp;: $P_A(B) = \dfrac{0{,}2}{0{,}5} = 0{,}4$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple 2</p><p>$P(A) = 0{,}4$ et $P_A(B) = 0{,}25$&nbsp;: $P(A \cap B) = 0{,}4 \times 0{,}25 = 0{,}1$.</p></div>
         <p class="chapter-link"><a href="../exercices/maths-1re.html#proba-cond">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
       </section>
 
       <p class="article-source">
         Fiches alignées sur le programme officiel (1re spé, lycée) —
-        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu vérifié (juin 2026).
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu et corrigés vérifiés (juin 2026).
       </p>
 
       <div class="article-cta">

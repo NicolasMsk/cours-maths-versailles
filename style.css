@@ -748,9 +748,17 @@ p { margin: 0; }
 .exemple { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.3rem 0; background: var(--navy-800); }
 .exemple-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 0.6rem; }
 .exemple p { color: var(--ivory); margin: 0.45rem 0; }
-.chapter-link { margin: 1.1rem 0 0; }
+.chapter-link { margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line-soft); }
 .chapter-link a { color: var(--gold-300); font-weight: 600; text-decoration: none; }
 .chapter-link a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.formules { border-left: 3px solid var(--gold); background: rgba(231, 185, 106, 0.06); padding: 0.9rem 1.3rem; border-radius: 0 10px 10px 0; margin: 1.2rem 0; }
+.formules-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 0.45rem; }
+.formules ul { margin: 0; padding-left: 1.2rem; }
+.formules li { color: var(--ivory); margin-bottom: 0.4rem; line-height: 1.6; }
+.methode { border: 1px solid var(--line-soft); border-radius: var(--radius); padding: 1rem 1.3rem; margin: 1.2rem 0; background: rgba(244, 238, 226, 0.02); }
+.methode-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-300); font-weight: 600; margin: 0 0 0.5rem; }
+.methode ol { margin: 0; padding-left: 1.3rem; }
+.methode li { color: var(--ivory-dim); margin-bottom: 0.4rem; line-height: 1.6; }
 
 /* Fil d'Ariane */
 .breadcrumb { font-size: 0.82rem; color: var(--ivory-fade); margin-bottom: 1.2rem; }
