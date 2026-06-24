@@ -735,6 +735,26 @@ p { margin: 0; }
 .erreurs strong { color: var(--gold-300); }
 .katex { color: var(--ivory); }
 .level-tag { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 3.6rem); color: var(--gold); letter-spacing: 0.02em; }
+
+/* Fil d'Ariane */
+.breadcrumb { font-size: 0.82rem; color: var(--ivory-fade); margin-bottom: 1.2rem; }
+.breadcrumb a { color: var(--ivory-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
+.breadcrumb span[aria-current] { color: var(--ivory); }
+
+/* Simulateur crédit d'impôt */
+.simulator { background: var(--navy-800); border: 1px solid var(--line); border-radius: var(--radius-l); padding: clamp(1.3rem, 4vw, 1.8rem); margin: 1.8rem 0; }
+.sim-title { font-family: var(--sans); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; color: var(--gold); margin: 0 0 1.1rem; }
+.sim-fields { display: flex; flex-wrap: wrap; gap: 1rem; }
+.sim-fields label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; color: var(--ivory-dim); flex: 1; min-width: 150px; }
+.sim-fields input { background: var(--navy-950); border: 1px solid var(--line-soft); border-radius: 10px; padding: 0.6rem 0.8rem; color: var(--ivory); font-size: 1.05rem; font-family: var(--sans); }
+.sim-out { display: grid; gap: 0.55rem; margin-top: 1.3rem; border-top: 1px solid var(--line-soft); padding-top: 1.2rem; }
+.sim-out > div { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.sim-out span { color: var(--ivory-dim); }
+.sim-out strong { font-family: var(--serif); font-size: 1.2rem; color: var(--ivory); white-space: nowrap; }
+.sim-net { border-top: 1px dashed var(--line); padding-top: 0.6rem; margin-top: 0.2rem; }
+.sim-net strong { color: var(--gold-300); font-size: 1.6rem; }
+.sim-note { font-size: 0.82rem; color: var(--ivory-fade); margin-top: 1rem; }
 .article-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--ivory-fade); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
 .article-meta .cat { color: var(--gold); font-weight: 600; }
 .article h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin-bottom: 1.2rem; }

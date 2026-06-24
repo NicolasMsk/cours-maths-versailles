@@ -45,6 +45,13 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://cours-maths-versailles.fr/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://cours-maths-versailles.fr/blog/"},
+    {"@type":"ListItem","position":3,"name":"Crédit d'impôt sur les cours de maths à domicile : les 50 % expliqués","item":"https://cours-maths-versailles.fr/blog/credit-impot-cours-maths-domicile.html"}
+  ]}
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -61,6 +68,7 @@
 
   <main>
     <article class="article">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> › <a href="index.html">Blog</a> › <span aria-current="page">Crédit d'impôt sur les cours de maths à domicile : les 50 % expliqués</span></nav>
       <img class="article-banner" src="img/credit-impot.jpg" alt="Calculatrice, billets et pièces en euros illustrant le crédit d'impôt" width="1280" height="760" />
 
       <div class="article-meta"><span class="cat">Financement</span><span>23 juin 2026</span><span>· 7 min de lecture</span></div>
@@ -105,6 +113,38 @@
         <a href="prix-cours-particulier-maths.html">le prix d'un cours particulier de maths</a> — où l'on insiste sur une idée
         simple&nbsp;: <strong>le seul chiffre qui compte, c'est le coût après crédit d'impôt</strong>.
       </p>
+
+      <div class="simulator" id="sim">
+        <p class="sim-title">Simulateur — votre coût réel après crédit d'impôt</p>
+        <div class="sim-fields">
+          <label>Tarif horaire (€)
+            <input type="number" id="sim-rate" value="50" min="0" step="1" inputmode="decimal" />
+          </label>
+          <label>Nombre de cours par an
+            <input type="number" id="sim-n" value="30" min="0" step="1" inputmode="numeric" />
+          </label>
+        </div>
+        <div class="sim-out">
+          <div><span>Total versé sur l'année</span><strong id="sim-total">1 500 €</strong></div>
+          <div><span>Crédit d'impôt (50 %)</span><strong id="sim-cred">− 750 €</strong></div>
+          <div class="sim-net"><span>Votre coût réel</span><strong id="sim-net">750 €</strong></div>
+        </div>
+        <p class="sim-note">Estimation indicative, dans la limite du plafond annuel de 12&nbsp;000&nbsp;€. Le 1ᵉʳ cours étant offert, le coût réel est même un peu inférieur.</p>
+      </div>
+      <script>
+        (function () {
+          var rate = document.getElementById('sim-rate'),
+              n = document.getElementById('sim-n'),
+              fmt = function (x) { return Math.round(x).toLocaleString('fr-FR') + ' €'; },
+              upd = function () {
+                var t = (parseFloat(rate.value) || 0) * (parseInt(n.value, 10) || 0), c = t / 2;
+                document.getElementById('sim-total').textContent = fmt(t);
+                document.getElementById('sim-cred').textContent = '− ' + fmt(c);
+                document.getElementById('sim-net').textContent = fmt(t - c);
+              };
+          rate.addEventListener('input', upd); n.addEventListener('input', upd); upd();
+        })();
+      </script>
 
       <h2>Le plafond : suffisant pour le soutien scolaire</h2>
       <p>
