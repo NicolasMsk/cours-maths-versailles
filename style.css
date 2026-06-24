@@ -736,6 +736,22 @@ p { margin: 0; }
 .katex { color: var(--ivory); }
 .level-tag { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 3.6rem); color: var(--gold); letter-spacing: 0.02em; }
 
+/* Fiches de cours */
+.programme { background: rgba(143, 176, 206, 0.08); border: 1px solid var(--line-soft); border-radius: var(--radius); padding: 1rem 1.4rem; margin: 0 0 1.4rem; }
+.programme-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-300); font-weight: 600; margin: 0 0 0.5rem; }
+.programme ul { margin: 0; padding-left: 1.2rem; }
+.programme li { color: var(--ivory-dim); margin-bottom: 0.35rem; line-height: 1.55; }
+.cours-body p { color: var(--ivory-dim); line-height: 1.78; margin-bottom: 1rem; }
+.cours-body ul { color: var(--ivory-dim); margin: 0 0 1.1rem; padding-left: 1.3rem; }
+.cours-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+.cours-body strong { color: var(--ivory); font-weight: 600; }
+.exemple { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.3rem 0; background: var(--navy-800); }
+.exemple-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 0.6rem; }
+.exemple p { color: var(--ivory); margin: 0.45rem 0; }
+.chapter-link { margin: 1.1rem 0 0; }
+.chapter-link a { color: var(--gold-300); font-weight: 600; text-decoration: none; }
+.chapter-link a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
 /* Fil d'Ariane */
 .breadcrumb { font-size: 0.82rem; color: var(--ivory-fade); margin-bottom: 1.2rem; }
 .breadcrumb a { color: var(--ivory-dim); text-decoration: none; }

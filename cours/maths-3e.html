@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours de maths 3ᵉ : fiches de cours et programme détaillé (brevet) | Nicolas Musicki</title>
+  <meta name="description" content="Fiches de cours de maths de 3ᵉ : identités remarquables, équations, Pythagore, Thalès, fonctions affines. Programme détaillé, formules clés et exemples, pour le brevet." />
+  <link rel="canonical" href="https://cours-maths-versailles.fr/cours/maths-3e.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0A1422" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cours de maths 3ᵉ" />
+  <meta property="og:description" content="Fiches de cours de maths de 3ᵉ : identités remarquables, équations, Pythagore, Thalès, fonctions affines. Programme détaillé, formules clés et exemples, pour le brevet." />
+  <meta property="og:url" content="https://cours-maths-versailles.fr/cours/maths-3e.html" />
+  <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Cours de maths 3ᵉ",
+    "description": "Fiches de cours de maths de 3ᵉ : identités remarquables, équations, Pythagore, Thalès, fonctions affines. Programme détaillé, formules clés et exemples, pour le brevet.",
+    "url": "https://cours-maths-versailles.fr/cours/maths-3e.html",
+    "inLanguage": "fr-FR",
+    "educationalLevel": "Classe de 3ᵉ",
+    "learningResourceType": "Cours / fiche de révision",
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "datePublished": "2026-06-24", "dateModified": "2026-06-24",
+    "author": { "@type": "Person", "name": "Nicolas Musicki", "url": "https://cours-maths-versailles.fr/", "jobTitle": "Professeur de mathématiques · Data Scientist", "sameAs": ["https://www.linkedin.com/in/nicolas-musicki-4867a4184/"] },
+    "publisher": { "@type": "Person", "name": "Nicolas Musicki" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://cours-maths-versailles.fr/"},
+    {"@type":"ListItem","position":2,"name":"Cours","item":"https://cours-maths-versailles.fr/cours/"},
+    {"@type":"ListItem","position":3,"name":"Cours de maths 3ᵉ","item":"https://cours-maths-versailles.fr/cours/maths-3e.html"}
+  ]}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="brand" aria-label="Accueil — Nicolas Musicki">
+      <span class="brand-mark" aria-hidden="true">π</span>
+      <span class="brand-name">Nicolas&nbsp;Musicki</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="index.html">Cours</a>
+      <a href="../exercices/">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> › <a href="index.html">Cours</a> › <span aria-current="page">Maths 3ᵉ</span></nav>
+      <div class="article-meta"><span class="cat">Cours · 3ᵉ</span><span>Programme officiel</span><span>· fiches + exemples</span></div>
+      <h1>Cours de maths 3ᵉ</h1>
+      <p class="lead-p">
+        Les <strong>fiches de cours</strong> de 3ᵉ, chapitre par chapitre&nbsp;: le programme détaillé, les définitions et
+        formules clés, et un exemple résolu. Chaque fiche renvoie vers les <a href="../exercices/maths-3e.html">exercices corrigés</a> correspondants.
+      </p>
+
+      <nav class="toc" aria-label="Sommaire">
+        <p class="toc-title">Au programme</p>
+        <ol>
+          <li><a href="#calcul-litteral">Calcul littéral & identités remarquables</a></li>
+          <li><a href="#equations">Équations</a></li>
+          <li><a href="#pythagore">Théorème de Pythagore</a></li>
+          <li><a href="#thales">Théorème de Thalès</a></li>
+          <li><a href="#fonctions">Fonctions linéaires et affines</a></li>
+        </ol>
+      </nav>
+
+      <section class="chapter" id="calcul-litteral">
+        <h2>1. Calcul littéral & identités remarquables</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Développer et factoriser</li><li>Connaître les trois identités remarquables</li><li>Reconnaître une différence de carrés</li></ul></div>
+        <div class="cours-body"><p>Les <strong>identités remarquables</strong>&nbsp;:</p>
+<ul><li>$(a+b)^2 = a^2 + 2ab + b^2$</li><li>$(a-b)^2 = a^2 - 2ab + b^2$</li><li>$(a+b)(a-b) = a^2 - b^2$</li></ul>
+<p>On les lit dans les deux sens&nbsp;: de gauche à droite pour <strong>développer</strong>, de droite à gauche pour <strong>factoriser</strong>.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$(3x + 2)^2 = 9x^2 + 12x + 4$ &nbsp;;&nbsp; $16x^2 - 9 = (4x - 3)(4x + 3)$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-3e.html#calcul-litteral">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="equations">
+        <h2>2. Équations</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Résoudre une équation du premier degré</li><li>Résoudre une équation produit</li><li>Utiliser « un produit est nul »</li></ul></div>
+        <div class="cours-body"><p>Un <strong>produit de facteurs est nul</strong> si, et seulement si, l’un au moins de ses facteurs est nul. On factorise puis on annule chaque facteur.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$(x - 3)(2x + 1) = 0$ donne $x = 3$ ou $x = -\dfrac{1}{2}$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-3e.html#equations">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="pythagore">
+        <h2>3. Théorème de Pythagore</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer une longueur dans un triangle rectangle</li><li>Appliquer la réciproque pour prouver un angle droit</li></ul></div>
+        <div class="cours-body"><p>Triangle rectangle en $A$&nbsp;: $BC^2 = AB^2 + AC^2$. <strong>Réciproque</strong>&nbsp;: si $BC^2 = AB^2 + AC^2$, alors le triangle est rectangle en $A$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>Côtés $5$, $12$, $13$&nbsp;: $5^2 + 12^2 = 169 = 13^2$, donc le triangle est rectangle.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-3e.html#pythagore">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="thales">
+        <h2>4. Théorème de Thalès</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Écrire les rapports égaux</li><li>Calculer une longueur</li><li>Connaître la configuration</li></ul></div>
+        <div class="cours-body"><p>Si $(MN) \parallel (BC)$, avec $A$, $M$, $B$ alignés et $A$, $N$, $C$ alignés, alors&nbsp;: $$\dfrac{AM}{AB} = \dfrac{AN}{AC} = \dfrac{MN}{BC}.$$</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$AM = 3$, $AB = 8$, $BC = 10$&nbsp;: $MN = 10 \times \dfrac{3}{8} = 3{,}75$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-3e.html#thales">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="fonctions">
+        <h2>5. Fonctions linéaires et affines</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Distinguer fonction linéaire et affine</li><li>Calculer une image et un antécédent</li><li>Déterminer une fonction linéaire</li></ul></div>
+        <div class="cours-body"><p>Une fonction <strong>linéaire</strong> s’écrit $f(x) = ax$ ; une fonction <strong>affine</strong> $f(x) = ax + b$. L’<strong>image</strong> de $x$ est $f(x)$ ; un <strong>antécédent</strong> de $y$ est un $x$ tel que $f(x) = y$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$f(x) = 3x - 5$&nbsp;: $f(4) = 7$ et l’antécédent de $7$ est $4$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-3e.html#fonctions">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <p class="article-source">
+        Fiches alignées sur le programme officiel (3ᵉ, cycle 4) —
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu vérifié (juin 2026).
+      </p>
+
+      <div class="article-cta">
+        <h2>Envie d'aller plus loin&nbsp;?</h2>
+        <p>Cours de maths à domicile à Versailles et alentours, tous niveaux jusqu'au bac. Premier cours gratuit.</p>
+        <a href="../index.html#contact" class="btn btn--primary">Me contacter</a>
+      </div>
+
+      <aside class="author-box">
+        <img src="../portrait.jpg" alt="Nicolas Musicki, professeur de mathématiques à Versailles" width="88" height="88" />
+        <div>
+          <span class="author-kicker">À propos de l'auteur</span>
+          <strong>Nicolas Musicki</strong>
+          <p>Data Scientist, diplômé d'un Bac+5 en mathématiques. J'enseigne les maths en cours particuliers à domicile à Versailles et alentours depuis deux ans.</p>
+          <p class="author-links"><a href="../index.html#contact">Me contacter</a> · <a href="https://www.linkedin.com/in/nicolas-musicki-4867a4184/" target="_blank" rel="noopener">Voir mon profil LinkedIn</a></p>
+        </div>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand"><span class="brand-mark" aria-hidden="true">π</span> Nicolas Musicki</span>
+    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay</span>
+    <nav class="footer-links" aria-label="Liens">
+      <a href="index.html">Cours</a>
+      <a href="../exercices/">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+  </footer>
+
+  <script defer src="../vendor/katex/katex.min.js"></script>
+  <script defer src="../vendor/katex/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ], throwOnError: false });
+    });
+  </script>
+</body>
+</html>

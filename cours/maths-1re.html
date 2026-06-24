@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours de maths 1re spé : fiches de cours et programme détaillé | Nicolas Musicki</title>
+  <meta name="description" content="Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples." />
+  <link rel="canonical" href="https://cours-maths-versailles.fr/cours/maths-1re.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0A1422" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cours de maths 1re spé" />
+  <meta property="og:description" content="Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples." />
+  <meta property="og:url" content="https://cours-maths-versailles.fr/cours/maths-1re.html" />
+  <meta property="og:image" content="https://cours-maths-versailles.fr/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Cours de maths 1re spé",
+    "description": "Fiches de cours de spécialité maths de première : second degré, dérivation, suites, produit scalaire, probabilités conditionnelles. Définitions, théorèmes et exemples.",
+    "url": "https://cours-maths-versailles.fr/cours/maths-1re.html",
+    "inLanguage": "fr-FR",
+    "educationalLevel": "Classe de 1re spé",
+    "learningResourceType": "Cours / fiche de révision",
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "datePublished": "2026-06-24", "dateModified": "2026-06-24",
+    "author": { "@type": "Person", "name": "Nicolas Musicki", "url": "https://cours-maths-versailles.fr/", "jobTitle": "Professeur de mathématiques · Data Scientist", "sameAs": ["https://www.linkedin.com/in/nicolas-musicki-4867a4184/"] },
+    "publisher": { "@type": "Person", "name": "Nicolas Musicki" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://cours-maths-versailles.fr/"},
+    {"@type":"ListItem","position":2,"name":"Cours","item":"https://cours-maths-versailles.fr/cours/"},
+    {"@type":"ListItem","position":3,"name":"Cours de maths 1re spé","item":"https://cours-maths-versailles.fr/cours/maths-1re.html"}
+  ]}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="brand" aria-label="Accueil — Nicolas Musicki">
+      <span class="brand-mark" aria-hidden="true">π</span>
+      <span class="brand-name">Nicolas&nbsp;Musicki</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="index.html">Cours</a>
+      <a href="../exercices/">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> › <a href="index.html">Cours</a> › <span aria-current="page">Maths 1re spé</span></nav>
+      <div class="article-meta"><span class="cat">Cours · 1re spé</span><span>Programme officiel</span><span>· fiches + exemples</span></div>
+      <h1>Cours de maths 1re spé</h1>
+      <p class="lead-p">
+        Les <strong>fiches de cours</strong> de 1re spé, chapitre par chapitre&nbsp;: le programme détaillé, les définitions et
+        formules clés, et un exemple résolu. Chaque fiche renvoie vers les <a href="../exercices/maths-1re.html">exercices corrigés</a> correspondants.
+      </p>
+
+      <nav class="toc" aria-label="Sommaire">
+        <p class="toc-title">Au programme</p>
+        <ol>
+          <li><a href="#second-degre">Second degré</a></li>
+          <li><a href="#derivation">Dérivation</a></li>
+          <li><a href="#suites">Suites</a></li>
+          <li><a href="#produit-scalaire">Produit scalaire</a></li>
+          <li><a href="#proba-cond">Probabilités conditionnelles</a></li>
+        </ol>
+      </nav>
+
+      <section class="chapter" id="second-degre">
+        <h2>1. Second degré</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer le discriminant</li><li>Résoudre $ax^2+bx+c=0$</li><li>Interpréter le signe de Δ</li></ul></div>
+        <div class="cours-body"><p>Pour $ax^2 + bx + c = 0$ ($a \neq 0$), on calcule le <strong>discriminant</strong> $\Delta = b^2 - 4ac$. Si $\Delta > 0$, deux racines $x = \dfrac{-b \pm \sqrt{\Delta}}{2a}$ ; si $\Delta = 0$, une racine double ; si $\Delta < 0$, aucune racine réelle.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$x^2 - 5x + 6 = 0$&nbsp;: $\Delta = 1$, racines $3$ et $2$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-1re.html#second-degre">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="derivation">
+        <h2>2. Dérivation</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Connaître les dérivées usuelles</li><li>Dériver une somme et un produit par un réel</li><li>Interpréter $f'$ (variations, tangente)</li></ul></div>
+        <div class="cours-body"><p>La <strong>dérivée</strong> de $x^n$ est $n x^{n-1}$. La dérivée d’une somme est la somme des dérivées ; la dérivée d’une constante est nulle. Le signe de $f'$ donne les <strong>variations</strong> de $f$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$f(x) = 3x^2 - 5x + 1 \Rightarrow f'(x) = 6x - 5$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-1re.html#derivation">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="suites">
+        <h2>3. Suites</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Reconnaître une suite arithmétique ou géométrique</li><li>Exprimer $u_n$ en fonction de $n$</li><li>Calculer un terme</li></ul></div>
+        <div class="cours-body"><p><strong>Arithmétique</strong> (on ajoute la raison $r$)&nbsp;: $u_n = u_0 + nr$. <strong>Géométrique</strong> (on multiplie par la raison $q$)&nbsp;: $u_n = u_0 \times q^n$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$u_0 = 2$, $q = 3$&nbsp;: $u_n = 2 \times 3^n$, donc $u_3 = 54$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-1re.html#suites">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="produit-scalaire">
+        <h2>4. Produit scalaire</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Calculer un produit scalaire</li><li>Tester l’orthogonalité</li><li>Utiliser les coordonnées</li></ul></div>
+        <div class="cours-body"><p>Pour $\vec{u}(x\,;y)$ et $\vec{v}(x'\,;y')$&nbsp;: $\vec{u} \cdot \vec{v} = xx' + yy'$. Deux vecteurs non nuls sont <strong>orthogonaux</strong> si, et seulement si, $\vec{u} \cdot \vec{v} = 0$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$\vec{u}(1\,;2)$, $\vec{v}(4\,;-2)$&nbsp;: $\vec{u} \cdot \vec{v} = 4 - 4 = 0$, vecteurs orthogonaux.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-1re.html#produit-scalaire">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <section class="chapter" id="proba-cond">
+        <h2>5. Probabilités conditionnelles</h2>
+        <div class="programme"><p class="programme-title">Au programme</p><ul><li>Définir une probabilité conditionnelle</li><li>Utiliser un arbre pondéré</li><li>Appliquer la formule des probabilités</li></ul></div>
+        <div class="cours-body"><p>La probabilité de $B$ <strong>sachant $A$</strong> est $P_A(B) = \dfrac{P(A \cap B)}{P(A)}$, d’où $P(A \cap B) = P(A) \times P_A(B)$.</p></div>
+        <div class="exemple"><p class="exemple-title">Exemple</p><p>$P(A) = 0{,}5$, $P(A \cap B) = 0{,}2$&nbsp;: $P_A(B) = \dfrac{0{,}2}{0{,}5} = 0{,}4$.</p></div>
+        <p class="chapter-link"><a href="../exercices/maths-1re.html#proba-cond">→ S'entraîner : exercices corrigés de ce chapitre</a></p>
+      </section>
+
+      <p class="article-source">
+        Fiches alignées sur le programme officiel (1re spé, lycée) —
+        <a href="https://eduscol.education.fr/" target="_blank" rel="noopener">eduscol.education.fr</a>. Contenu vérifié (juin 2026).
+      </p>
+
+      <div class="article-cta">
+        <h2>Envie d'aller plus loin&nbsp;?</h2>
+        <p>Cours de maths à domicile à Versailles et alentours, tous niveaux jusqu'au bac. Premier cours gratuit.</p>
+        <a href="../index.html#contact" class="btn btn--primary">Me contacter</a>
+      </div>
+
+      <aside class="author-box">
+        <img src="../portrait.jpg" alt="Nicolas Musicki, professeur de mathématiques à Versailles" width="88" height="88" />
+        <div>
+          <span class="author-kicker">À propos de l'auteur</span>
+          <strong>Nicolas Musicki</strong>
+          <p>Data Scientist, diplômé d'un Bac+5 en mathématiques. J'enseigne les maths en cours particuliers à domicile à Versailles et alentours depuis deux ans.</p>
+          <p class="author-links"><a href="../index.html#contact">Me contacter</a> · <a href="https://www.linkedin.com/in/nicolas-musicki-4867a4184/" target="_blank" rel="noopener">Voir mon profil LinkedIn</a></p>
+        </div>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand"><span class="brand-mark" aria-hidden="true">π</span> Nicolas Musicki</span>
+    <span class="footer-meta">Cours particuliers de maths à domicile · Versailles, Viroflay, Le Chesnay</span>
+    <nav class="footer-links" aria-label="Liens">
+      <a href="index.html">Cours</a>
+      <a href="../exercices/">Exercices</a>
+      <a href="../blog/">Blog</a>
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../confidentialite.html">Confidentialité &amp; cookies</a>
+    </nav>
+  </footer>
+
+  <script defer src="../vendor/katex/katex.min.js"></script>
+  <script defer src="../vendor/katex/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, { delimiters: [ { left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false } ], throwOnError: false });
+    });
+  </script>
+</body>
+</html>
