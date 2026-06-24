@@ -833,6 +833,53 @@ p { margin: 0; }
 }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 
+/* ===================== ANIMATIONS PREMIUM ===================== */
+/* Halo doré au survol des cartes */
+.card:hover, .article-card:hover, .contact-card:hover { box-shadow: 0 26px 60px -32px rgba(231, 185, 106, 0.4); }
+
+/* Reflet doré sur le mot-clé du hero (fallback : or plein) */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1 em {
+      background: linear-gradient(100deg, var(--gold-600) 8%, var(--gold) 28%, #FFF1D2 48%, var(--gold) 68%, var(--gold-600) 92%);
+      background-size: 230% auto;
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+      animation: gold-shimmer 7s linear infinite;
+    }
+  }
+}
+@keyframes gold-shimmer { to { background-position: 230% center; } }
+
+/* Balayage lumineux du bouton principal */
+.btn--primary { position: relative; overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .btn--primary::after {
+    content: ""; position: absolute; top: 0; left: -130%; width: 55%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: skewX(-18deg); pointer-events: none;
+  }
+  .btn--primary:hover::after { animation: btn-sheen 0.85s ease; }
+}
+@keyframes btn-sheen { from { left: -130%; } to { left: 140%; } }
+
+/* Léger flottement du portrait + lueur qui dérive dans le hero */
+@media (prefers-reduced-motion: no-preference) {
+  .portrait-frame { animation: portrait-float 7s ease-in-out infinite; }
+  .hero::before { animation: glow-drift 14s ease-in-out infinite; }
+}
+@keyframes portrait-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.hero::before {
+  content: ""; position: absolute; z-index: 0; pointer-events: none;
+  width: clamp(280px, 40vw, 520px); aspect-ratio: 1; top: -120px; right: -60px;
+  background: radial-gradient(circle, rgba(231, 185, 106, 0.16), transparent 70%);
+  filter: blur(20px);
+}
+@keyframes glow-drift { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-34px, 22px) scale(1.12); } }
+
+/* Compteurs animés : transition douce */
+[data-count] { font-variant-numeric: tabular-nums; }
+
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 880px) {
   .hero-grid { grid-template-columns: 1fr; text-align: center; }
