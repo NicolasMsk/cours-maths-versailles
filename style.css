@@ -1089,7 +1089,7 @@ p { margin: 0; }
 
 @media (max-width: 880px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
-  .hero-visual { order: -1; justify-self: center; margin-bottom: 1.5rem; }
+  .hero-visual { order: 1; justify-self: center; margin-top: 2.6rem; }
   .hero-eyebrow, .hero-actions, .hero-trust { justify-content: center; }
   .hero-lead { margin-left: auto; margin-right: auto; }
   .hero-trust li { align-items: center; }
