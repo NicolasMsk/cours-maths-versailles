@@ -53,11 +53,15 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="../index.html" class="brand" aria-label="Accueil — Nicolas Musicki">
+    <a href="../index.html" class="brand" aria-label="Accueil">
       <span class="brand-mark" aria-hidden="true">π</span>
-      <span class="brand-name">Nicolas&nbsp;Musicki</span>
     </a>
-    <nav class="nav" aria-label="Navigation principale">
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Navigation principale">
       <a href="../index.html">Accueil</a>
       <a href="index.html">Blog</a>
       <a href="../index.html#contact" class="nav-cta">Contact</a>
@@ -178,5 +182,6 @@
       <a href="../confidentialite.html">Confidentialité &amp; cookies</a>
     </nav>
   </footer>
+  <script defer src="../anim.js?v=2"></script>
 </body>
 </html>
