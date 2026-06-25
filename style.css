@@ -305,6 +305,20 @@ p { margin: 0; }
 .about-points strong { display: block; font-size: 1.02rem; color: var(--ivory); margin-bottom: 0.2rem; font-weight: 600; }
 .about-points span { color: var(--ivory-dim); font-size: 0.95rem; }
 
+.about-link { margin-top: 1.6rem; }
+.about-signature {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.9rem, 4.5vw, 2.5rem);
+  color: var(--gold-300);
+  line-height: 1;
+  margin: 1.4rem 0 0;
+  transform: rotate(-3deg);
+  transform-origin: left center;
+  letter-spacing: 0.01em;
+}
+
 /* ===================== CITATION ===================== */
 .pullquote-band {
   max-width: var(--maxw);
@@ -959,6 +973,34 @@ p { margin: 0; }
 .hero-title { font-family: var(--serif); font-weight: 500; font-size: clamp(2.5rem, 6vw, 4.3rem); line-height: 1.04; letter-spacing: -0.03em; margin: 0 0 1.5rem; }
 .hero-lead { font-size: clamp(1.08rem, 2.1vw, 1.3rem); color: var(--ivory-dim); max-width: 40ch; margin: 0 0 2.1rem; }
 .hero-lead strong { color: var(--gold-300); font-weight: 600; }
+
+/* Prix entouré au crayon (signature dessinée main) */
+.hero-price { position: relative; display: inline-block; }
+.hand-circle {
+  position: absolute;
+  left: 50%; top: 52%;
+  transform: translate(-50%, -50%);
+  width: 122%; height: auto;
+  overflow: visible;
+  pointer-events: none;
+  z-index: -1;
+}
+.hand-circle path {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.85;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hand-circle path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: draw-circle 0.9s 1.05s cubic-bezier(0.6, 0, 0.4, 1) forwards;
+  }
+}
+@keyframes draw-circle { to { stroke-dashoffset: 0; } }
 .hero-trust { list-style: none; display: flex; flex-wrap: wrap; gap: 1.3rem 2.2rem; margin: 0; padding: 1.6rem 0 0; border-top: 1px solid var(--line-soft); }
 .hero-trust li { display: flex; flex-direction: column; gap: 0.18rem; }
 .hero-trust strong { font-family: var(--serif); font-weight: 500; font-size: 1.55rem; color: var(--gold-300); line-height: 1; }
